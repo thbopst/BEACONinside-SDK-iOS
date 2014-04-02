@@ -1,0 +1,14 @@
+PODS:
+  - BEACONinsideSDK (1.0.0-beta1)
+
+DEPENDENCIES:
+  - BEACONinsideSDK (from `../BEACONinsideSDK.podspec`)
+
+EXTERNAL SOURCES:
+  BEACONinsideSDK:
+    :path: ../BEACONinsideSDK.podspec
+
+SPEC CHECKSUMS:
+  BEACONinsideSDK: 75895a4a5ddca549149d1f8abbfae96272d9be65
+
+COCOAPODS: 0.31.0
