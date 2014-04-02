@@ -3,9 +3,13 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/BEACONinsideSDK/badge.png)](http://cocoadocs.org/docsets/BEACONinsideSDK)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/BEACONinsideSDK/badge.png)](http://cocoadocs.org/docsets/BEACONinsideSDK)
 
-## Usage
+## Demo App
 
-To run the demo app; clone the repo, and run `pod install` from the Example directory first.
+To run the demo app, clone the repo, and run `pod install` from the Example directory first:
+
+    > git clone git@github.com:beaconinside/BEACONinside-SDK-iOS.git
+    > cd BEACONinside-SDK-iOS/Example
+    > pod install
 
 The demo app uses the [NCIChartView](https://github.com/FlowForwarding/dynamiccharts) Cocoapod to display a chart of the signal strength of iBeacons in range.
 
