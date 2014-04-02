@@ -1,6 +1,3 @@
-target "BEACONinsideDemo" do
+target "BEACONinsideSDKDemo" do
   pod "BEACONinsideSDK", :path => "../BEACONinsideSDK.podspec"
-end
-
-target "BEACONinsideDemoTests" do
 end
