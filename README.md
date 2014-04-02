@@ -7,6 +7,8 @@
 
 To run the demo app; clone the repo, and run `pod install` from the Example directory first.
 
+The demo app uses the [NCIChartView](https://github.com/FlowForwarding/dynamiccharts) Cocoapod to display a chart of the signal strength of iBeacons in range.
+
 ## Requirements
 
 iOS 7.x. The SDK supports a deployment target of iOS 6.0, but it provides no functionality when run on iOS 6.
