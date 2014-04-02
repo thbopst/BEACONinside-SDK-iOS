@@ -11,7 +11,9 @@ The demo app uses the [NCIChartView](https://github.com/FlowForwarding/dynamicch
 
 ## Requirements
 
-iOS 7.x. The SDK supports a deployment target of iOS 6.0, but it provides no functionality when run on iOS 6.
+The SDK requires iOS 7.x for its functionality.
+
+We support a deployment target of iOS 6.0, but the SDK provides no functionality when run on iOS 6.
 
 ## Installation
 
