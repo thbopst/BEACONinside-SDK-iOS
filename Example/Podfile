@@ -1,3 +1,6 @@
+platform :ios, "7.0"
+
 target "BEACONinsideSDKDemo" do
   pod "BEACONinsideSDK", :path => "../BEACONinsideSDK.podspec"
+  pod "NCICharts", "~> 1.0", :inhibit_warnings => true
 end

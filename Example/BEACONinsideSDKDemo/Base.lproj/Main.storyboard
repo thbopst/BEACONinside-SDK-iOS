@@ -17,6 +17,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vWd-BS-xLl" kind="relationship" relationship="viewControllers" id="a3z-Q6-viW"/>
+                        <segue destination="iz9-jt-tzl" kind="relationship" relationship="viewControllers" id="xOD-tj-tMp"/>
                         <segue destination="coo-Mt-GRu" kind="relationship" relationship="viewControllers" id="tUi-ph-bxl"/>
                         <segue destination="br2-N1-kgC" kind="relationship" relationship="viewControllers" id="ZED-wr-3RY"/>
                         <segue destination="fsa-pg-TdX" kind="relationship" relationship="viewControllers" id="YSk-3B-fuV"/>
@@ -589,6 +590,41 @@
             </objects>
             <point key="canvasLocation" x="-59" y="-905"/>
         </scene>
+        <!--Navigation Controller - Chart-->
+        <scene sceneID="jAe-Sy-LXC">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="iz9-jt-tzl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chart" image="Chart" id="0b3-et-ySW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kl7-sa-cSR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vjU-eK-NsB" kind="relationship" relationship="rootViewController" id="7GR-rD-SPm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7y-cT-keF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="-232"/>
+        </scene>
+        <!--Chart View Controller - Chart-->
+        <scene sceneID="sQ2-oa-SzT">
+            <objects>
+                <viewController id="vjU-eK-NsB" customClass="BIChartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2f2-yq-s1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="G7E-y6-hlH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAa-ae-AbI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chart" id="3Vx-Kp-aEO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGX-ji-bRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="-232"/>
+        </scene>
         <!--Navigation Controller - Zone-->
         <scene sceneID="lwe-am-Peb">
             <objects>
@@ -611,6 +647,7 @@
     </scenes>
     <resources>
         <image name="BLEInfo" width="16" height="20"/>
+        <image name="Chart" width="23" height="23"/>
         <image name="Radar" width="20" height="16"/>
         <image name="Setup" width="20" height="20"/>
         <image name="Zone" width="23" height="17"/>
