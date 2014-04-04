@@ -64,7 +64,7 @@ You can also monitor how the device moves from one iBeacon to another within a l
         NSLog(@"The nearest beacon is now: %@", nearestBeacon);
      }];
 
-Finally, you can tell the beacon manager to deliver continuous updates of the signal strength  for all beacons within the specified region that are currently in range. In this case, the handler block will be called approximately once evert second and will pass you a list of all beacons it has seen in the specified region, sorted by signal strength. The list includes all beacons the beacon manager has seen in the specified region, even when they are currently not in range.
+Finally, you can tell the beacon manager to deliver continuous updates of the signal strength  for all beacons within the specified region that are currently in range. In this case, the handler block will be called approximately once every second and will pass you a list of all beacons it has seen in the specified region, sorted by signal strength. The list includes all beacons the beacon manager has seen in the specified region, even when they are currently not in range.
 
     CLBeaconRegion *beaconRegion = ...
     [self.beaconManager startContinuousRangingInRegion:beaconRegion
@@ -79,7 +79,13 @@ Finally, you can tell the beacon manager to deliver continuous updates of the si
 
 ## Author
 
-[BEACONinside GmbH](http://www.beaconinside.com/)
+Cornelius Rabsch, [BEACONinside GmbH](http://www.beaconinside.com/)
+
+Let us know how BEACONinside can support you with developing awesome mobile applications. Just [drop us](mailto:support@beaconinside.com) a message.
+
+## Changelog
+
+To see what has changed in recent versions, see the [CHANGELOG](https://github.com/beaconinside/BEACONinside-SDK-iOS/blob/master/CHANGELOG.md).
 
 ## License
 
