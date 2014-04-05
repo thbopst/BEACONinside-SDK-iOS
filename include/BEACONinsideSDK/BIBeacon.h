@@ -26,7 +26,7 @@
  *  collection.
  *
  *  BIBeacon instances can be used as keys in an NSDictionary or as elements in an NSSet. Equality is tested based on
- *  proximityUUID, major and minor only, as is the return value of the -hash method.
+ *  proximityUUID, major and minor only, as it is the return value of the -hash method.
  */
 @interface BIBeacon : NSObject <NSCopying>
 
