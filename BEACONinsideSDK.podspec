@@ -11,13 +11,14 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/beaconinside/BEACONinside-SDK-iOS"
   s.license          = "MIT"
-  s.author           = "BEACONinside"
-  s.source           = { :git => "https://github.com/beaconinside/BEACONinside-SDK-iOS.git", :tag => s.version.to_s }
+  s.author           = { "BEACONinside" => "info@beaconinside.com" }
   s.social_media_url = "https://twitter.com/beaconinside"
+  s.source           = { :git => "https://github.com/beaconinside/BEACONinside-SDK-iOS.git", :tag => s.version.to_s }
+  s.source_files     =  "BEACONinsideSDK/**/*.h"
+  s.public_header_files = "BEACONinsideSDK/**/*.h"
+  s.vendored_library = "lib/libBEACONinsideSDK.a"
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '6.0'
   s.requires_arc = true
-  s.vendored_library = "lib/libBEACONinsideSDK.a"
-  s.public_header_files = 'include/BEACONinsideSDK/*.h'
   s.frameworks = 'Foundation', 'CoreLocation', 'CoreBluetooth'
 end
