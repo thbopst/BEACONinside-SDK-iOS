@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/beaconinside/BEACONinside-SDK-iOS.git", :tag => s.version.to_s }
   s.source_files     =  "BEACONinsideSDK/**/*.h"
   s.public_header_files = "BEACONinsideSDK/**/*.h"
-  s.vendored_library = "lib/libBEACONinsideSDK.a"
+  s.vendored_library = "BEACONinsideSDK/libBEACONinsideSDK.a"
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '6.0'
   s.requires_arc = true

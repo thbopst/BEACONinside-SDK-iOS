@@ -1,6 +1,6 @@
 PODS:
   - BEACONinsideSDK (1.0.0-beta1)
-  - NCICharts (1.0.3)
+  - NCICharts (1.0.4)
 
 DEPENDENCIES:
   - BEACONinsideSDK (from `../BEACONinsideSDK.podspec`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../BEACONinsideSDK.podspec
 
 SPEC CHECKSUMS:
-  BEACONinsideSDK: 75895a4a5ddca549149d1f8abbfae96272d9be65
-  NCICharts: 24a77e32677354ade80ad9bd28aab800ba7bd827
+  BEACONinsideSDK: 54136b6640d95569bd1900fc03368eb8b43360f9
+  NCICharts: 421a79b81a0368dbe9164a8675eedb6f20880e2f
 
 COCOAPODS: 0.31.1
