@@ -8,6 +8,7 @@
 
 @import UIKit;
 @import AudioToolbox;
+@import CoreLocation;
 
 #import "BIBeaconController.h"
 #import "BIPreferencesController.h"
@@ -16,6 +17,7 @@
 
 @property (nonatomic, strong, readwrite) CLBeaconRegion *monitoredRegion;
 @property (nonatomic, strong, readwrite) CLBeaconRegion *rangedRegion;
+@property (nonatomic, strong, readwrite) CLLocationManager *locationManager;
 
 @end
 
@@ -40,16 +42,24 @@
         _rangingLog = [[BIEventLog alloc] init];
         _beaconManager = [[BIBeaconManager alloc] init];
         
+        // Check and request location service access authorization (iOS 8)
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        if ( [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+            [self.locationManager requestWhenInUseAuthorization]; // calls delegate
+        }
+        
         [self _setupMonitoredRegion];
         [self _setupRangedRegion];
         [self _reregisterEventHandlers];
         [self _registerBluetoothStateUpdateHandler];
-
+        
         // Listen to user defaults changes
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_userDefaultsDidChange:) name:NSUserDefaultsDidChangeNotification object:nil];
     }
     return self;
 }
+
 
 - (void)dealloc
 {
@@ -264,6 +274,12 @@
     } else {
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     }
+}
+
+# pragma mark - CLLocationManagerDelegate protocol
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    // delegate method is required! Otherwise iOS 8 does not present the location service authorization prompt to the user.
 }
 
 @end

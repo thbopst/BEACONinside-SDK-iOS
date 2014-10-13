@@ -13,7 +13,7 @@
 /**
  *  A singleton object that manages the BIBeaconManager for the app and interacts with the app's view controllers.
  */
-@interface BIBeaconController : NSObject
+@interface BIBeaconController : NSObject <CLLocationManagerDelegate>
 
 + (instancetype)sharedBeaconController;
 
